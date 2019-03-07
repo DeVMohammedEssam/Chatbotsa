@@ -88,7 +88,7 @@ function AllHtml() {
         <span id="default" />
         <span id="style1" />
       </div>
-      <i className="fas fa-2x fa-cog fa-spin" />
+      <i className="fas fa-2x fa-cog fa-spin" style={{ cursor: "pointer" }} />
 
       {/*chat button*/}
       <i className="fas fa-comments" />
