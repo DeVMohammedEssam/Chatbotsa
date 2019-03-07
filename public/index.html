@@ -35,10 +35,29 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+    <style>
+      .loader__container {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 99999;
+        min-width: 100%;
+        min-height: 100%;
+        background: #fff;
+      }
+    </style>
   </head>
 
   <body>
     <div id="app"></div>
+    <div class="loader__container">
+      <img src="/loader.gif" alt="" />
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
