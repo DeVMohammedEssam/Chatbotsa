@@ -16,22 +16,28 @@ $margin: 50px;
   font-size: 0;
 }
 
-@mixin col($col,
-$sum,
-$firstGap: false,
-$lastGap: false,
-$gap: 1em,
-$vAlign: top) {
+@mixin col(
+  $col,
+  $sum,
+  $firstGap: false,
+  $lastGap: false,
+  $gap: 1em,
+  $vAlign: top
+) {
   display: inline-block; //to make the vertival align works
   font-size: 16px; // a trick to remove default spacing in inline-block elemnts
   box-sizing: border-box; // to prevent padding from increasing the calculated with of the col
   padding: 0 $gap;
-  padding-left: if($firstGap,
+  padding-left: if(
+    $firstGap,
     0,
-    $gap); //to prevent the padding before the 1st Element
-  padding-right: if($lastGap,
+    $gap
+  ); //to prevent the padding before the 1st Element
+  padding-right: if(
+    $lastGap,
     0,
-    $gap); //##note## if(condition,true,false) is a built in function
+    $gap
+  ); //##note## if(condition,true,false) is a built in function
 
   //responsivene
   width: percentage($col/$sum);
@@ -48,7 +54,7 @@ $vAlign: top) {
 
 //general settings*/
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   transition: all 0.4s ease;
 }
@@ -272,7 +278,6 @@ header {
 
 /*quote section*/
 .readLess {
-
   &:focus,
   &:active,
   &:hover {
@@ -588,8 +593,6 @@ header {
   .carousel {
     margin-top: 12rem;
   }
-
-
 
   .card {
     padding-top: 10px;
@@ -944,8 +947,6 @@ footer {
   #style1 {
     background: #fd9644;
   }
-
-
 }
 
 .fa-cog {
@@ -998,7 +999,7 @@ footer {
     width: 100%;
     display: block;
     position: relative;
-    background-image: url("/images/backgrounds/teamWork.JPG");
+    background-image: url("/images/backgrounds/team-work.JPG");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
