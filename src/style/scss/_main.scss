@@ -401,6 +401,11 @@ header {
       width: 400px;
     }
 
+    @media screen and (max-width: 552px) {
+      margin-left: 0 !important;
+      max-width: 100% !important;
+      margin-right: 0 !important;
+    }
     &:not(:last-of-type) {
       margin-bottom: 25px;
     }
@@ -658,8 +663,17 @@ header {
     }
   }
 
-  .img-wrabber:nth-child(1) {
-    background-image: url("http://placehold.it/200/400");
+  .bot1 {
+    background-image: url("/images/bots/bot1.jpg");
+  }
+  .bot2 {
+    background-image: url("/images/bots/bot2.jpg");
+  }
+  .bot3 {
+    background-image: url("/images/bots/bot3.jpg");
+  }
+  .bot4 {
+    background-image: url("/images/bots/bot4.jpg");
   }
 }
 
@@ -735,6 +749,9 @@ header {
     border: 1px solid rgba(150, 150, 150, 0.7);
     border-radius: 40px;
     overflow: hidden;
+    @media screen and (max-width: 552px) {
+      overflow: auto;
+    }
     z-index: 1;
     transform: scale(0);
     opacity: 0;
@@ -816,7 +833,7 @@ header {
 footer {
   border-radius: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
-
+  overflow: hidden;
   a {
     color: #333;
 

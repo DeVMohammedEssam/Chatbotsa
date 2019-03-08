@@ -145,7 +145,7 @@ class AllHtml extends Component {
         {/*starting of header*/}
         <header>
           {/*starting of navbar*/}
-          <nav className="navbar navbar-expand-lg fixed-top">
+          <nav className="navbar navbar-expand-lg fixed-lg-top">
             <a className="navbar-brand" href="#">
               <img src="images/logos/logo2.png" className="img-fluid" />
             </a>
@@ -621,28 +621,28 @@ class AllHtml extends Component {
                 data-aos="flip-down"
                 data-aos-duration="500"
               >
-                <div className="img-wrabber" />
+                <div className="img-wrabber bot1" />
               </div>
               <div
                 className="col-xs-12 col-sm-6 col-lg-3 my-3 my-lg-0"
                 data-aos="flip-down"
                 data-aos-duration="1500"
               >
-                <div className="img-wrabber" />
+                <div className="img-wrabber bot2" />
               </div>
               <div
                 className="col-xs-12 col-sm-6 col-lg-3 my-3 my-lg-0"
                 data-aos="flip-down"
                 data-aos-duration="2500"
               >
-                <div className="img-wrabber" />
+                <div className="img-wrabber bot3" />
               </div>
               <div
                 className="col-xs-12 col-sm-6 col-lg-3 my-3 my-lg-0"
                 data-aos="flip-down"
                 data-aos-duration="3500"
               >
-                <div className="img-wrabber" />
+                <div className="img-wrabber bot4" />
               </div>
             </div>
           </section>
